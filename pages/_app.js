@@ -1,9 +1,8 @@
-import { ThemeProvider } from "next-themes";
+import "../styles/global.css";
 
 export default function MyApp({ Component, pageProps }) {
+  // <ThemeProvider defaultTheme="system" enableSystem={true} attribute="class">
   return (
-    <ThemeProvider defaultTheme="system" enableSystem={true} attribute="class">
       <Component {...pageProps} />
-    </ThemeProvider>
   );
 }
